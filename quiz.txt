@@ -1,0 +1,25 @@
+1. create_router.js
+
+2. The Server folder contains the db and helpers sub-folders, as well as server.js. 
+   In essence this is where our back end is dealt with, our database setup and interactions, 
+   router setup etc. The Client folder is more front-end focused, dealing with React features,
+   and holds our containers and components.
+
+3. server.js is where the server code is built. It is using Express methods like .listen to 
+   "listen" out for user requests. 
+
+4. gamesRouter is creating a router based on the gamesCollection db. It is taking that db data and making
+   it accessible in the app via app.use.
+
+5. GamesService.js contains the GamesService funtion that handles communication between the server 
+   (back-end) and the client (front-end).
+   
+6. A fetch's optional second argument is an init options object. The ones used in postGame and deleteGame
+   define the route request methods the functions require. 
+
+7. router.get('/), router.post('/'), router.delete('/:id')
+
+8. The MongoDB driver is allowing the app to access and interact with the data in the MongoDB database. 
+
+Extension Question:
+   ObjectId assures each object/item in the database has a unique identifier. 
